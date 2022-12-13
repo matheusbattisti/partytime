@@ -1,0 +1,72 @@
+.form-page h2,
+.form-page p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-page p {
+  color: #7703fc;
+}
+
+.form-page form {
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-page label {
+  color: #747990;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-page input,
+.form-page textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+}
+
+.form-page input::placeholder {
+  color: #a4a7b4;
+}
+
+.form-page .service {
+  max-width: 29%;
+  text-align: center;
+}
+
+.form-page .service p {
+  margin-bottom: 0rem;
+}
+
+.form-page .checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.form-page .service-name {
+  font-weight: bold;
+}
+
+.form-page .service-price {
+  color: #747990;
+}
+
+.form-page .checkbox-container p {
+  color: #747990;
+  font-size: 0.7rem;
+}
+
+.form-page .btn {
+  max-width: 150px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,73 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+  {
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
+
+###
+GET http://localhost:3000/api/services/
+
+###
+GET http://localhost:3000/api/services/63937bd13b8bae81ab9c6b6d
+
+###
+DELETE http://localhost:3000/api/services/63937bd13b8bae81ab9c6b6d
+
+###
+PUT http://localhost:3000/api/services/63937bfec4263b463389ec4f
+Content-Type: application/json
+
+{
+    "name": "ATUALIZADO",
+    "description": "Muito bom",
+    "price": 199.90
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "services": [{
+        "_id": "63937a6929b37d5f01064c19",
+        "name": "Serviço 3",
+        "description": "Muito bom",
+        "price": 500.90
+    },
+    {
+        "_id": "63937a6929b37d5f01064c21",
+        "name": "Serviço 4",
+        "description": "TEste",
+        "price": 129.90
+    }]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/63939be4c4ab483878b0f80f
+
+###
+DELETE http://localhost:3000/api/parties/63939be4c4ab483878b0f80f
+
+###
+PUT http://localhost:3000/api/parties/63939be4c4ab483878b0f80f
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "services": ["63937a6929b37d5f01064c19"]
+}
